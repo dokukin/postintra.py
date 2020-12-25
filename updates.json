@@ -1,0 +1,164 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "update_id": 188380337,
+      "message": {
+        "message_id": 1406,
+        "from": {
+          "id": 433890478,
+          "is_bot": false,
+          "first_name": "Александр",
+          "last_name": "Докукин",
+          "username": "ztn17",
+          "language_code": "ru"
+        },
+        "chat": {
+          "id": 433890478,
+          "first_name": "Александр",
+          "last_name": "Докукин",
+          "username": "ztn17",
+          "type": "private"
+        },
+        "date": 1608603313,
+        "text": "123"
+      }
+    },
+    {
+      "update_id": 188380338,
+      "message": {
+        "message_id": 1407,
+        "from": {
+          "id": 433890478,
+          "is_bot": false,
+          "first_name": "Александр",
+          "last_name": "Докукин",
+          "username": "ztn17",
+          "language_code": "ru"
+        },
+        "chat": {
+          "id": 433890478,
+          "first_name": "Александр",
+          "last_name": "Докукин",
+          "username": "ztn17",
+          "type": "private"
+        },
+        "date": 1608603328,
+        "text": "/auth",
+        "entities": [
+          {
+            "offset": 0,
+            "length": 5,
+            "type": "bot_command"
+          }
+        ]
+      }
+    },
+    {
+      "update_id": 188380339,
+      "message": {
+        "message_id": 1408,
+        "from": {
+          "id": 433890478,
+          "is_bot": false,
+          "first_name": "Александр",
+          "last_name": "Докукин",
+          "username": "ztn17",
+          "language_code": "ru"
+        },
+        "chat": {
+          "id": 433890478,
+          "first_name": "Александр",
+          "last_name": "Докукин",
+          "username": "ztn17",
+          "type": "private"
+        },
+        "date": 1608603370,
+        "text": "/auth",
+        "entities": [
+          {
+            "offset": 0,
+            "length": 5,
+            "type": "bot_command"
+          }
+        ]
+      }
+    },
+    {
+      "update_id": 188380340,
+      "message": {
+        "message_id": 1409,
+        "from": {
+          "id": 433890478,
+          "is_bot": false,
+          "first_name": "Александр",
+          "last_name": "Докукин",
+          "username": "ztn17",
+          "language_code": "ru"
+        },
+        "chat": {
+          "id": 433890478,
+          "first_name": "Александр",
+          "last_name": "Докукин",
+          "username": "ztn17",
+          "type": "private"
+        },
+        "date": 1608603372,
+        "text": "123"
+      }
+    },
+    {
+      "update_id": 188380341,
+      "message": {
+        "message_id": 1410,
+        "from": {
+          "id": 433890478,
+          "is_bot": false,
+          "first_name": "Александр",
+          "last_name": "Докукин",
+          "username": "ztn17",
+          "language_code": "ru"
+        },
+        "chat": {
+          "id": 433890478,
+          "first_name": "Александр",
+          "last_name": "Докукин",
+          "username": "ztn17",
+          "type": "private"
+        },
+        "date": 1608603507,
+        "text": "123"
+      }
+    },
+    {
+      "update_id": 188380342,
+      "message": {
+        "message_id": 1411,
+        "from": {
+          "id": 433890478,
+          "is_bot": false,
+          "first_name": "Александр",
+          "last_name": "Докукин",
+          "username": "ztn17",
+          "language_code": "ru"
+        },
+        "chat": {
+          "id": 433890478,
+          "first_name": "Александр",
+          "last_name": "Докукин",
+          "username": "ztn17",
+          "type": "private"
+        },
+        "date": 1608603509,
+        "text": "/auth",
+        "entities": [
+          {
+            "offset": 0,
+            "length": 5,
+            "type": "bot_command"
+          }
+        ]
+      }
+    }
+  ]
+}
