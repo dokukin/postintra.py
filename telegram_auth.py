@@ -36,7 +36,8 @@ class BotHandler:
     def delete_telegram(self, id_msg, user_id):
         method = "deleteMessage"
         params = {'chat_id': user_id, 'message_id': id_msg}
-        requests.post(self.api_url + method, params)
+        delete_msg = requests.post(self.api_url + method, params)
+        print(delete_msg)
 
 
 greet_bot = BotHandler(config.token)

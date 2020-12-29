@@ -1,6 +1,6 @@
 import requests
 import time
-import config
+import sql_db
 from bs4 import BeautifulSoup
 import jira_info
 import telegram_auth
@@ -96,14 +96,15 @@ def login_and_password():
                     telegram_auth.greet_bot.send_message(message_text['chat_id'], 'Неверно указан логин или пароль')
             elif message_text['text'] == '/stop':
                 for delete_data in user_data:
-                    if delete_data[message_text['chat_id']] == user_data['user_id']:
+                    if delete_data[message_text['chat_id']] in user_data:
                         user_data.remove(delete_data)
-                    else: continue
+                    else:
+                        continue
             else:
                 continue
 
 
-def get_suz(cookie, login, password):
+def get_suz(user_id, cookie, login, password):
     url = 'https://intra.s7.aero/itsd?widget=app%2Fgrid'
     HEADERS = {
         'Content-Type': 'application/json',
@@ -129,7 +130,7 @@ def get_suz(cookie, login, password):
     }
     request = requests.post(url, headers=HEADERS, json=params1)
     response = request.json()
-    suz_messages = ['']
+    suz_messages = []
     message_error = None
     jira_data = jira_info.jira_info(login, password)
     try:
@@ -159,13 +160,15 @@ def html_parser(proc):
 
 
 def diff_request():
-    s1 = ['']
-    s2 = ['']
+    s1 = []
+    s2 = []
+    text_and_user_id = []
     while True:
+
         login_and_password()
         if user_data:
             for user_data_one in user_data:
-                s2 = get_suz(user_data_one['cookie'], user_data_one['login_user'], user_data_one['password_user'])
+                s2 = get_suz(user_data_one['user_id'], user_data_one['cookie'], user_data_one['login_user'], user_data_one['password_user'])
                 if set(s1) == set(s2):
                     print('Изменений нет')
                     time.sleep(10)
@@ -174,10 +177,12 @@ def diff_request():
                         if s3 in s1:
                             pass
                         else:
-                            telegram_auth.greet_bot.send_message(user_data_one['user_id'], s3)
+                            send_msg_response = telegram_auth.greet_bot.send_message(user_data_one['user_id'], s3)
+                            send_msg = send_msg_response.json()
                             massiv_zayvok.append({
                                 'text': s3,
-                                'id': user_data_one['user_id']
+                                'id': send_msg['result']['message_id'],
+                                #'user_id': send_msg['result']['chat']['id']
                             })
                             s1.append(s3)
                     diff = list(set(s1) ^ set(s2))
@@ -199,4 +204,4 @@ def change_telegram_message(r, user_id):
 
 
 if __name__ == '__main__':
-    diff_request()
+    sql_db.create_sql()

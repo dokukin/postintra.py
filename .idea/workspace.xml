@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5a8371b-2ebe-4c1e-a17b-a3cf1fb446fa" name="Default Changelist" comment="Новые файлы" />
+    <list default="true" id="f5a8371b-2ebe-4c1e-a17b-a3cf1fb446fa" name="Default Changelist" comment="Новые файлы">
+      <change afterPath="$PROJECT_DIR$/sql_db.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sqldb.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postintra.py" beforeDir="false" afterPath="$PROJECT_DIR$/postintra.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telegram_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/telegram_auth.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,27 +61,6 @@
     <option name="enabled" value="false" />
   </component>
   <component name="RunManager" selected="Python.postintra">
-    <configuration name="jira_info" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="bot_intra" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/jira_info.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="postintra" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -88,6 +73,27 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/postintra.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sql_db" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="bot_intra" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sql_db.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -160,10 +166,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.postintra" />
+        <item itemvalue="Python.sql_db" />
         <item itemvalue="Python.test_list" />
         <item itemvalue="Python.telegram_auth" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.jira_info" />
       </list>
     </recent_temporary>
   </component>
@@ -204,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607010290381</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Новые файлы">
+      <created>1608886590797</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1608886590797</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -222,9 +235,9 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="1" />
-    <MESSAGE value="Новые файлы" />
     <MESSAGE value="Славный код" />
-    <option name="LAST_COMMIT_MESSAGE" value="Славный код" />
+    <MESSAGE value="Новые файлы" />
+    <option name="LAST_COMMIT_MESSAGE" value="Новые файлы" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -233,11 +246,6 @@
           <url>file://$PROJECT_DIR$/test.py</url>
           <line>21</line>
           <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/postintra.py</url>
-          <line>168</line>
-          <option name="timeStamp" value="61" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
